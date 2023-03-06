@@ -978,21 +978,96 @@ decimo = primeiro + (10-1) * razao
 for c in range(primeiro,decimo + razao,razao):
     print(c)
 '''
+# refazendo exercicios para a pratica.
+'''
+from time import sleep
+
+for c in range(10,0,-1):
+    sleep(1)
+    print(c)
+print('POWWW PAA ')
+'''
+'''
+for c in range(1,51):
+    if c % 2 == 0:
+        print(c)
+'''
+#jokempo completamente sozinho
+'''
+import random
+from time import sleep
+
+print('=-=' * 7)
+print('VAMOS JOGAR JOKEMPO!!')
+print('=-=' * 7)
+sleep(0.5)
+
+pc = random.choice(['pedra', 'papel', 'tesoura'])
+
+eu = str(input('Sua escolha: ')).lower().strip().replace(' ','')
 
 
+print('='*26)
+print('ANALISANDO SUA RESPOSTA...')
+print('='*26)
 
+sleep(1)
 
+if eu == 'pedra' and pc == 'papel':
+    print('Não foi dessa vez jogador, Boa sorte na proxima!')
+    print('Eu escolhi {} ja voce {} por isso ganhei :) '.format(pc,eu))
+elif eu == 'pedra' and pc == 'tesoura':
+    print('Parabéns dessa vez voce ganhou!!')
+    print('Eu escolhi {} e voce {} por isso perdi :('.format(pc,eu))
+elif eu == 'pedra' and pc ==  'pedra':
+    print('Empatamos jogador, eu escolhi {} tambem! '.format(pc))
 
+elif eu == 'tesoura' and pc == 'pedra':
+    print('Não foi dessa vez jogador, Boa sorte na proxima!')
+    print('Eu escolhi {} ja voce {} por isso ganhei :) '.format(pc,eu))
+elif eu == 'tesoura' and pc == 'papel':
+    print('Parabéns dessa vez voce ganhou!!')
+    print('Eu escolhi {} e voce {} por isso perdi :('.format(pc,eu))
+elif eu == 'tesoura' and pc ==  'tesoura':
+    print('Empatamos jogador, eu escolhi {} tambem! '.format(pc))
 
+elif eu == 'papel' and pc == 'tesoura':
+    print('Não foi dessa vez jogador, Boa sorte na proxima!')
+    print('Eu escolhi {} ja voce {} por isso ganhei :) '.format(pc,eu))
+elif eu == 'papel' and pc == 'pedra':
+    print('Parabéns dessa vez voce ganhou!!')
+    print('Eu escolhi {} e voce {} por isso perdi :('.format(pc,eu))
+elif eu == 'papel' and pc ==  'papel':
+    print('Empatamos jogador, eu escolhi {} tambem! '.format(pc))
+else:
+    print('Não entendi o que voce digitou desculpa:(')
+'''
+'''
+soma = 0
 
+for c in range(1,7):
+    n = int(input('digite o {}º numero '.format(c)))
+    if n % 2 == 0:
+        soma += n
+print('A soma dos numeros pares é {}'.format(soma))
+'''
+'''
+from time import sleep
 
+n = int(input('Digite um número para saber sua tabuada: '))
 
+print('='*14)
+print('PROCESSANDO...')
+print('='*14)
 
+sleep(1)
 
+print('A tabuada do {} é:'.format(n))
 
-
-
-
+for c in range(0,11):
+    
+    print('{} x {} = {}'.format(n,c,n*c))
+'''
 
 
 
