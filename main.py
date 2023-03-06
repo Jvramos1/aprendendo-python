@@ -1060,16 +1060,18 @@ print('='*14)
 print('PROCESSANDO...')
 print('='*14)
 
-sleep(1)
+sleep(0.7)
 
 print('A tabuada do {} é:'.format(n))
 
 for c in range(0,11):
-    
+
     print('{} x {} = {}'.format(n,c,n*c))
-'''
-
-
+print('='*21)
+print('Espero ter ajudado ;)')
+print('='*21)
+''' 
+print('hello world')
 
 
 
