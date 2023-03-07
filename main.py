@@ -1070,8 +1070,25 @@ for c in range(0,11):
 print('='*21)
 print('Espero ter ajudado ;)')
 print('='*21)
-''' 
-print('hello world')
+'''
+import random
+from time import sleep
+
+eu = int(input('Tente acertar o numero de 1 a 10 que eu tenho em mente: '))
+
+print('='*14)
+print('PROCESSANDO...')
+print('='*14)
+sleep(1)
+
+pc = random.randint(1,10)
+
+if eu == pc:
+    print('Eu pensei em {} e voce em {} voce ganhou!!'.format(pc,eu))
+elif eu != pc:
+    print('Eu pensei em {} e voce em {} voce perdeu'.format(pc,eu))
+else:
+    print('Não entendi o que voce digitou tente novamente')
 
 
 
